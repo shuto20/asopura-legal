@@ -142,6 +142,15 @@ h2{font-size:clamp(26px,4vw,38px);line-height:1.45;margin:0 0 14px}
 .cta .stores{justify-content:center}
 .cta .stamp{position:absolute;opacity:.25;animation:float 6s ease-in-out infinite}
 
+/* 読み物への入口 */
+.col-list{display:grid;gap:12px}
+.col-list a{display:block;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--green);border-radius:16px;padding:14px 20px;color:var(--fg);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.col-list a:nth-child(2){border-left-color:var(--blue)}
+.col-list a:nth-child(3){border-left-color:var(--orange)}
+.col-list a:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(58,46,37,.1)}
+.col-list b{display:block;font-size:17px;line-height:1.5}
+.col-list small{color:var(--sub);font-size:14px}
+
 footer{text-align:center;color:var(--sub);font-size:13px;padding:40px 20px 48px}
 footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 20px;margin-bottom:12px}
 footer a{color:var(--sub)}
